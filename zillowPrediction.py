@@ -192,10 +192,10 @@ linrreg.fit(train_x,train_y)
 
 #Feature ranking with recursive feature elimination. stop the search when only the last feature is left
 '''
-the goal of recursive feature elimination (RFE) is to select features by recursively 
-considering smaller and smaller sets of features. First, the estimator is trained on the 
-initial set of features and the importance of each feature is obtained either through a 
-coef_ attribute or through a feature_importances_ attribute. Then, the least important 
+the goal of recursive feature elimination (RFE) is to select features by recursively
+considering smaller and smaller sets of features. First, the estimator is trained on the
+initial set of features and the importance of each feature is obtained either through a
+coef_ attribute or through a feature_importances_ attribute. Then, the least important
 features are pruned from current set of features. That procedure is recursively repeated
  on the pruned set until the desired number of features to select is eventually reached.
 '''
@@ -294,59 +294,3 @@ y_pred = Model_svm.predict(test_x[top_features])
 #print('Test Error: ', Model_svm.score(test_x[top_features],test_y))
 
 sklearn.metrics.mean_squared_error(test_y, y_pred)
-#%% learn with proximal gradient descent
-'''
-softmax element wise
-SM(beta_i)= beta_i  - lamda*eta    if lamda*eta < beta_i
-SM(beta_i) = 0                      if  -lamda*eta<beta_i <lamda*eta <
-SM(beta_i) = beta_i  - lamda*eta    if -lamda*eta > beta_i
-minimize 1/2|| y - x*beta||^2 + lamda||beta||
-if our g(x) term is 1/2|| y - x*beta||^2
-then our h(x)term lamda||beta|| term
-
-def softmax(w):
-    Todo
-
-
-
-step_size=0.5
-#initialize beta as a vector of all zeros
-beta= np.zeros((np.shape(train_x)[1],1))
-beta.shape
-
-
-#half_X = train_x.sample(int(np.shape(train_x)[0]/8))
-#%%
-print('shape xtrain', np.shape(train_x))
-print('shape beta', np.shape(beta))
-print('shape y_trian', np.shape(train_y))
-
-#y_pred = np.dot(half_X,beta)
-#%%
-#X_T = np.transpose(half_X)
-#%%
-#classify = LassoCV(cv=5)
-#scaler = StandardScaler()
-#scaler.fit(train_x)
-#sfm = sklearn.feature_selection.SelectFromModel(classify,threshold=0.0000000000000001)
-#sfm.fit(train_x[0:2000],train_y[0:2000])
-#n_features = sfm.transform(train_x).shape[1]
-
-
-#%%
-#initialize beta as a vector of all zeros
-#beta= np.zeros((np.shape(train_x)[1],1))
-#beta.shape
-
-#grad_g = (-1)*np.dot(X_T,train_y - y_pred)
-
-gradient_g=-X^T(y-X*beta_t)
-
-update_beta_t_1_2 = beta + step_size* gradient_g
-
-update_beta_t_1 = proximal(beta_t+step_size*X^T*(y-X*beta_t))
-                = softMax_Eq( beta_t + step_size*X^T*(y-X*beta_t))
-'''
-
-#update_beta = beta + step_size *grad_g
-#new_beta =  softmax(update_beta)
