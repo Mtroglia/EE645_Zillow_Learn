@@ -65,9 +65,10 @@
     <session id="-864839083">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -77,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zillowPrediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="301" column="58" lean-forward="true" selection-start-line="301" selection-start-column="58" selection-end-line="301" selection-end-column="58" />
+            <state relative-caret-position="271">
+              <caret line="289" column="50" selection-start-line="289" selection-start-column="50" selection-end-line="289" selection-end-column="50" />
               <folding>
                 <element signature="e#134#153#0" expanded="true" />
                 <marker date="1543822408823" expanded="true" signature="5518:5521" ph="..." />
@@ -113,6 +114,9 @@
       <find>mean</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -134,6 +138,7 @@
     <option name="width" value="1743" />
     <option name="height" value="1131" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -146,6 +151,11 @@
             <path>
               <item name="Zillow_Learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Zillow_Learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Zillow_Learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Zillow_Learning" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -229,10 +239,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="26" width="1503" height="1131" extended-state="0" />
-    <editor active="true" />
+    <frame x="35" y="26" width="1743" height="1131" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18433818" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16042781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -251,7 +260,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.6784203" visible="true" weight="0.05959806" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.6784203" visible="true" weight="0.051099226" />
       <window_info anchor="right" x="0" y="0" width="163" height="846" id="Documentation" order="4" sideWeight="0.3215797" side_tool="true" weight="0.521855" />
       <window_info anchor="right" id="Database" order="5" sideWeight="0.4992948" weight="0.32995737" />
     </layout>
@@ -275,22 +284,22 @@
         <state relative-caret-position="-1190" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zillowPrediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="301" column="58" lean-forward="true" selection-start-line="301" selection-start-column="58" selection-end-line="301" selection-end-column="58" />
+        <state relative-caret-position="271">
+          <caret line="289" column="50" selection-start-line="289" selection-start-column="50" selection-end-line="289" selection-end-column="50" />
           <folding>
             <element signature="e#134#153#0" expanded="true" />
             <marker date="1543822408823" expanded="true" signature="5518:5521" ph="..." />
             <marker date="1543822408823" expanded="true" signature="10436:10438" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
